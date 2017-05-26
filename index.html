@@ -14,7 +14,7 @@
         <span class="main-nav__toggler"><span></span></span> 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
           </ul>
           <div class="main-nav__searсh">
@@ -37,11 +37,131 @@
         </div>
       </div>
     </header>
-      <main>
-        
-      </main>
-    <footer>
-        
+    <main class="page-main">
+      <section class="promo-main">
+        <h2 class="promo-main__title">Вязаные корзинки</h2>
+          <div class="promo-main__descr">
+            <span class="promo-main__product-week">Товар недели</span>
+            <p class="promo-main__product-week-descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="promo-main__product-week-properties">
+              <tr class="promo-main__line-table">
+                <td>Цвет:</td>
+                <td>&laquo;Тиффани&raquo;/серый</td>
+              </tr>
+              <tr class="promo-main__line-table">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="promo-main__line-table">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="promo-main__product-img">
+            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязанная корзинка"> 
+          </div>
+          <div class="promo-main__product-price-order">
+            <div class="promo-main__price">Цена: 990 руб.</div>
+            <a class="promo-main__write btn" href="#">Заказать</a>
+          </div>
+      </section> 
+      <section class="about-us">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/33x38" width="33" height="38" alt="Экологические чистые материалы">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Экологические чистые материалы</p>    
+          </div>
+        </div>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/47x27" width="47" height="27" alt="Скандинавский стиль по российской цене">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Скандинавский стиль по российской цене</p>    
+          </div>
+        </div>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/34x27" width="34" height="27" alt="Увеличивает лайки на фотографиях">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Увеличивает лайки на фотографиях</p> 
+          </div>
+        </div>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/35x34" width="35" height="34" alt="Связано вручную с любовью и умилением">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Связано вручную с любовью и умилением</p> 
+          </div>
+        </div>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/55x23" width="55" height="23" alt="Поддержка отечественного производителя">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Поддержка отечественного производителя</p> 
+          </div>
+        </div>
+        <div class="about-us__block">
+          <div class="about-us__about-us-img">
+            <img src="http://placehold.it/33x32" width="33" height="32" alt="Поставляется в подарочной упаковке">
+          </div>
+          <div class="about-us__about-us-dscr">
+            <p>Поставляется в подарочной упаковке</p> 
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper">
+            <div class="reviews__list slider__inner">
+              <blockquote class="reviews__item slider__item">
+                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__auhor‐name">Анастасия Красильникова
+                    <span class="reviews__auhor‐email">@misssssiskras</span>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <button class="reviews__prev" type="button">&larr;</button>
+          <button class="reviews__next" type="button">&rarr;</button>
+          <a class="reviews__write btn" href="">Написать</a>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__email-and-location">
+          <tr>
+            <td>e-mail:</td>
+              <td><span class="contacts__email">info@mimimishkashop.ru</span></td>
+          </tr>
+          <tr>
+            <td>адрес:</td>
+            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr> 
+        </table>
+        <div class="contacts__map"></div>
+        <a class="contacts__write btn" href="">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page‐footer__wrapper">
+        <p class="page‐footer__social">
+          <span class="social‐links">
+            <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </span>
+        </p>
+        <p class="page‐footer__copyright">Разработано:
+          <a class="page‐footer__copyright‐link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" title="htmlacademy"></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
