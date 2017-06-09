@@ -10,56 +10,56 @@
   line-height: 20px;
   font-family: inherit;
   text-align: center;
-  color: @button-color;
+  color: @gray--dark;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: transparent;
-  border: 2px solid @button-border;
+  border: 2px solid @gray--dark;
   outline: none;
 
   &:hover,
   &:focus {
-    color: @button-color-hover;
+    color: @white;
 
-    background-color: @button-bg-hover;
+    background-color: @gray--dark;
   }
 
   &:active {
-    color: @button-color-active;
+    color: fade(@white, 30%);
 
-    background-color: @button-bg-active;
+    background-color: @gray--dark;
   }
 
   &--colored {
-    color: @button--colored-color;
+    color: @white;
 
-    background-color: @button--colored-bg;
-    border-color: @button--colored-border;
+    background-color: @color-main;
+    border-color: @color-main;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: @button--colored-bg-hover;
+      background-color: @color-main--light;
     }
   }
 
   &--outline-colored {
-    border-color: @button--outline-colored-border;
+    border-color: fade(@gray--dark, 10%);
 
     &:hover,
     &:focus {
-      color: @button--outline-colored-color-hover;
+      color: @gray--dark;
 
       background-color: transparent;
-      border-color: @button--outline-colored-border-hover;
+      border-color: fade(@gray--dark, 30%);
     }
 
     &:active {
-      color: @button--outline-colored-color-active;
+      color: @gray--dark;
 
       background-color: transparent;
-      border-color: @button--outline-colored-border-active;
+      border-color: @color-main--dark;
     }
   }
 
