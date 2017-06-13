@@ -1,59 +1,68 @@
 .button {
-    display: inline-block;
-    box-sizing: border-box;
-    min-width: 82px;
-    padding: 14px;
-    width: 100%;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    font-family: inherit;
-    text-align: center;
-    color: @gray--dark;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: transparent;
-    border: 2px solid @gray--dark;
-    outline: none;
-    &:hover,
-    &:focus {
-        color: @white;
-        background-color: @gray--dark;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 82px;
+  padding: 14px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: inherit;
+  text-align: center;
+  color: @gray--dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid @gray--dark;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    color: @white;
+    background-color: @gray--dark;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @gray--dark;
+  }
+
+  &--colored {
+    color: @white;
+    background-color: @color-main;
+    border-color: @color-main;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: @color-main--light;
     }
+  }
+
+  &--outline-colored {
+    border-color: fade(@gray--dark, 10%);
+
+    &:focus,
+    &:hover {
+      color: @gray--dark;
+      background-color: transparent;
+      border-color: fade(@gray--dark, 30%);
+    }
+
     &:active {
-        color: fade(@white, 30%);
-        background-color: @gray--dark;
+      color: @gray--dark;
+      background-color: transparent;
+      border-color: @color-main--dark;
     }
-    &--colored {
-        color: @white;
-        background-color: @color-main;
-        border-color: @color-main;
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: @color-main--light;
-        }
-    }
-    &--outline-colored {
-        border-color: fade(@gray--dark, 10%);
-        &:hover,
-        &:focus {
-            color: @gray--dark;
-            background-color: transparent;
-            border-color: fade(@gray--dark, 30%);
-        }
-        &:active {
-            color: @gray--dark;
-            background-color: transparent;
-            border-color: @color-main--dark;
-        }
-    }
-    &--block {
-        display: block;
-        width: 100%;
-    }
-    &::after,
-    &::before {
-        content: none;
-    }
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &::after,
+  &::before {
+    content: none;
+  }
 }
