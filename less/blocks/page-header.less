@@ -1,10 +1,19 @@
 .page-header {
-  .border-blocks();
   background-color: #f1f1f1;
 
   &--front {
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
   }
+}
+
+.page-header__wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 177px;
+}
+
+.page-header--front .page-header__wrap {
+  min-height: 490px;
 }
 
 .page-header__title {
@@ -30,4 +39,41 @@
   line-height: 24px;
   display: block;
   text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("../img/icon-interior.svg") no-repeat;
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    opacity: 0.5;
+    right: 30px;
+  }
+
+  &--darken {
+    background-color: #56c3b2;
+
+    &::before {
+      background: url("../img/icon-toy.svg") no-repeat;
+    }
+  }
+}
+@media @tablet-width {
+  .page-header__wrap {
+    .center();
+  }
+
+  .page-header__goods {
+    display: flex;
+  }
+
+  .page-header__goods-link {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

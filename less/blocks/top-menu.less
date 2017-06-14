@@ -1,7 +1,12 @@
 .top-menu {
-  .border-blocks();
   background-color: @white;
   box-shadow: 0 1px 0 0 @gray;
+  position: relative;
+  z-index: 5;
+}
+
+.top-menu__wrap {
+  position: relative;
 }
 
 .top-menu__logo {
@@ -11,12 +16,53 @@
   height: 79px;
 }
 
-.top-menu__wrap {
-  position: relative;
+.top-menu__nav {
+  background-color: @white;
+  box-shadow: 0 1px 0 0 @gray;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    position: absolute;
+    display: block;
+    width: 100%;
+  }
 }
 
 .top-menu__button {
   position: absolute;
   top: 17px;
   right: 15px;
+  margin: 0;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &--opened {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    svg {
+      height: 20px;
+    }
+  }
+}
+@media @tablet-width {
+  .top-menu__wrap {
+    .center();
+    display: flex;
+  }
+
+  .top-menu__button {
+    display: none;
+  }
+
+  .top-menu__nav {
+    display: flex;
+    margin-left: auto;
+    box-shadow: none;
+  }
 }
