@@ -1,5 +1,14 @@
 .order {
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.order__wrap {
   .center();
+
+  &--indent {
+    margin-bottom: 32px;
+  }
 }
 
 .order__title {
@@ -7,31 +16,172 @@
 }
 
 .order__description {
+  margin-bottom: 24px;
+
   font-size: 13px;
   line-height: 24px;
+
+  .center();
+
+  p {
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.order__section {
+  padding-bottom: 32px;
 }
 
 .order__subtitle {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
-  position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: 0;
+
     width: calc(~"100% - 63px");
     height: 1px;
+
     background: #62d1ba;
+  }
+
+  &--without-label {
+    margin-bottom: 7px;
   }
 
   &--mail {
     &::after {
       width: calc(~"100% - 81px");
     }
+  }
+}
+
+.order__radio {
+  margin-bottom: 3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__checkbox {
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__textfield {
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: -18px;
+  margin-bottom: 32px;
+}
+
+@media @tablet-width {
+  .order {
+    padding-top: 73px;
+  }
+
+  .order__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
+
+  .order__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &--bg-grey {
+      background-color: #f1f1f1;
+    }
+
+    &--controls {
+      padding-top: 2px;
+      padding-bottom: 27px;
+    }
+  }
+
+  .order__wrap {
+    display: flex;
+
+    &--indent {
+      margin-bottom: 23px;
+    }
+  }
+
+  .order__subtitle {
+    min-width: 167px;
+    margin-top: 17px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .order__group-fields {
+    flex-grow: 2;
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order__radio {
+    margin-bottom: 25px;
+  }
+
+  .order__checkbox {
+    margin-bottom: 25px;
+    width: 50%;
+  }
+
+  .order__textfield {
+    margin-bottom: 23px;
+  }
+
+  .order__controls {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .order__footnote {
+    margin: 0;
+    font-size: 17px;
+  }
+}
+
+@media @desktop-width {
+  .order__checkbox {
+    width: 33.333%;
   }
 }
