@@ -1,5 +1,14 @@
 .products__wrap {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  .center();
+  padding: 0 30px;
+  .container();
+}
+
+.products__title {
+  .element-invisible();
+}
+@media @desktop-width {
+  .products__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }
