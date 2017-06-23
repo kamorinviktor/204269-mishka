@@ -27,7 +27,11 @@
 <div class="top-menu">
   <div class="top-menu__wrap">
     <div class="top-menu__logo">
-      <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Mishka">
+      </picture>
     </div>
 
     <button class="top-menu__button" type="button" aria-label="Меню">
@@ -37,7 +41,7 @@
     <nav class="top-menu__nav top-menu__nav--nojs main-nav">
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item"><a class="main-nav__link" href="/catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="/form.html">Вязание на заказ</a></li>
       </ul>
 
       <ul class="main-nav__list main-nav__list--extra">
@@ -103,7 +107,11 @@
         </tr>
       </table>
 
-      <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+      </picture>
       <div class="pop-goods__price">Цена: 990 руб.</div>
       <a class="pop-goods__button button button--block" href="#" id="open-modal">Заказать</a>
     </div>
